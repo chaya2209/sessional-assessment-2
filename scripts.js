@@ -8,22 +8,6 @@ document.querySelector("form.searchbox").addEventListener("submit", (e) => {
   let text = "";
 
   var array = {};
-  /*let table = document.createElement("table");
-  let thead = document.createElement("thead");
-  let tbody = document.createElement("tbody");
-  table.appendChild(thead);
-  table.appendChild(tbody);
-  document.getElementById('body').appendChild(table);
-
-  let row_1 = document.createElement("tr");
-  let heading_1 = document.createElement("th");
-  heading_1.innerHTML = "Title"
-  let heading_2 = document.createElement("th");
-  heading_2.innerHTML = "Body"
-
-  row_1.appendChild(heading_1);
-  row_1.appendChild(heading_2);
-  thead.appendChild(row_1);*/
 
 
   xhr.onreadystatechange = function () {
@@ -32,10 +16,6 @@ document.querySelector("form.searchbox").addEventListener("submit", (e) => {
 
       const res = JSON.parse(xhr.responseText);
       array = {...res};
-      //console.log(array[0].title);
-      //console.log(array[0].body);
-
-      //var t=array[0].title+array[0].body+"";
       var div_create=document.createElement("div");
       div_create.style.width = "auto";
       div_create.style.height = "auto";
