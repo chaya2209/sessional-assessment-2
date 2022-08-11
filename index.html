@@ -11,11 +11,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="blogger.css"></link>
   <style>
+    
  
 
   </style>
 </head>
-<body>
+<body id="body" style="float: left; width: 33%; border: 1px solid #000000;">
 
 
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -34,10 +35,10 @@
          </div>
          <div class="navbar-collapse collapse pull-right">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Blogs</a></li>
-             <li><a href="#">Blog Form</a></li>
+            <li><a class="nav-link scrollto" href="index.html#Home">Home</a></li>
+             <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+             <!--<li><a href="#">Blogs</a></li>-->
+             <li><a class="nav-link scrollto" href="index.html#">Blog Form</a></li>
           </ul>
        </div>
         </div>
@@ -53,7 +54,7 @@
             </form>-->
             <form class="searchbox">
               <input id="data-input" type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
+              <button type="submit" style="background-color: black;"><i class="glyphicon glyphicon-search"></i></button>
             </form>
           </div>
        
@@ -62,6 +63,11 @@
       </div>
     </div>
  </div> 
+ <br>
+ <div class="container-fluid bg-1 text-center" id="about" style="width: 310%;">
+  <h3>Publish what you are passionate about. Create and browse beautiful blogs to share your knowledge, experiences, or the most recent news.</h3>
+</div>
+ 
  
  <div id="footer" class="footer navbar-fixed-bottom">
   <p>@All Rights Reserved By Chaya Shiv(2022)</p>  
